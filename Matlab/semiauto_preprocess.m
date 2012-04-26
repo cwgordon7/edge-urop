@@ -28,7 +28,16 @@ hp = handles.info.bandpass_high / handles.info.microns_per_pixel; % change to pi
 th = handles.info.preprocessing_threshold;
 
 tic
-cellsi = get_membs_v3(cells, lp, hp, th);
+
+%TODO REMOVE
+n = 8;
+embryo = load(sprintf('/Users/charlie/Desktop/tests/results/reference/test%d.mat', n));
+embryo = embryo.embryo4d;
+cellgraph = embryo.getCellGraph(0, n);
+centroids = cellgraph.centroidCoords;
+%END REMOVE
+
+cellsi = get_membs_v3(cells, lp, hp, th, centroids);
 t(2)=toc;
 
 % change the minimum cell size from microns^2 to pixels^2
