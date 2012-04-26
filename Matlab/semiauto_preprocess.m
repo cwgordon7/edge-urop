@@ -30,7 +30,7 @@ th = handles.info.preprocessing_threshold;
 tic
 
 %TODO REMOVE
-n = 8;
+n = 1;
 embryo = load(sprintf('/Users/charlie/Desktop/tests/results/reference/test%d.mat', n));
 embryo = embryo.embryo4d;
 cellgraph = embryo.getCellGraph(0, n);

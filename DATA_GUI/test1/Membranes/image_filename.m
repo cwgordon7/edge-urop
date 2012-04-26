@@ -1,6 +1,6 @@
 function data = image_filename(time_i, layer_i, src)
 % ** This is an automatically generated function
-% ** created at 1/23/2012, 3:12 PM by write_image_filename_function.m
+% ** created at 2/7/2012, 5:00 PM by write_image_filename_function.m
 % ** Inputs the time, layer, and source directory of a data set.
 % ** Outputs the filename of that image.
 

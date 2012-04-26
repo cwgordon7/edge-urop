@@ -1,7 +1,7 @@
 function path = find_min_path(weight, intmap, start, goal)
 % Finds the minimum path (weighted by weight) from the start point to the
 % end point.
-tic
+% tic
 % Import some useful Java classes for faster computation time.
 import java.util.PriorityQueue;
 
@@ -97,7 +97,7 @@ while ~openset.isEmpty()
             path = union(path, current_node, 'rows');
         end
         % Now, we're done, so return.
-        toc
+        % toc
         return;
     end
 
